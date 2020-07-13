@@ -1,0 +1,73 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "skills": "Skills",
+    "projects": "Projects",
+    "contact": "Contact"
+  },
+  "home": {
+    "title": "Izabela Turaj",
+    "description": "Frontend developer, minimalistic design enthusiast and hopeless wanderer.",
+    "imgSrc": "",
+    "imgAlt": ""
+  },
+  "about": {
+    "title": "About",
+    "description": "My name is Izabela Turaj and I would like to become front end developer in the future. Currently looking for an opportunity to join a team of developers and gain more practical skills.",
+    "imgSrc": "",
+    "imgAlt": ""
+  },
+  "skills": [
+    "HTML5",
+    "CSS3",
+    "JavaScript",
+    "React",
+    "Gatsby",
+    "Node",
+    "Bootstrap",
+    "Material",
+    "UX/UI",
+    "SCSS",
+    "PUG",
+    "RWD"
+  ],
+  "projects": [
+    {
+      "type": "React Project",
+      "description": "Travel and leisure theme for ecommerce business created with React and Bootstrap 4.",
+      "url": "url",
+      "repo": "repo",
+      "skillOne": "tech",
+      "skillTwo": "skillTwo",
+      "img": "img",
+      "alt": "alt"
+    },
+    {
+      "type": "React Project",
+      "description": "Travel and leisure theme for ecommerce business created with React and Bootstrap 4.",
+      "url": "url",
+      "repo": "repo",
+      "skillOne": "tech",
+      "skillTwo": "skillTwo",
+      "img": "img",
+      "alt": "alt"
+    },
+    {
+      "type": "React Project",
+      "description": "Travel and leisure theme for ecommerce business created with React and Bootstrap 4.",
+      "url": "url",
+      "repo": "repo",
+      "skillOne": "tech",
+      "skillTwo": "skillTwo",
+      "img": "img",
+      "alt": "alt"
+    }
+  ],
+  "contact": {
+    "title": "Contact",
+    "description": "Looking for an opportunity to join a team of happy developers and gain more practical skills.",
+    "imgSrc": "",
+    "imgAlt": ""
+  }
+}

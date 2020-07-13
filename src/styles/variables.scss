@@ -1,0 +1,28 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,500");
+
+$color-primary: #99cfb2;
+$color-secondary: #fabec0;
+$color-tertiary: #73c3d3;
+$color-light: #efefef;
+$color-white: #fff;
+$color-black: #111;
+
+$font-size-small: 1.6rem;
+$font-size-regular: 1.8rem;
+$font-size-large: 2.6rem;
+$font-size-extra-large: 3.6rem;
+
+$font-weight-light: 300;
+$font-weight-regular: 400;
+$font-weight-bold: 500;
+
+$nav-height: 8vh;
+
+:export {
+    primary: $color-primary;
+    secondary: $color-secondary;
+    tertiary: $color-tertiary;
+    light: $color-light;
+    white: $color-white;
+    black: $color-black;
+}
