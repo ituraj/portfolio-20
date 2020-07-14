@@ -1,5 +1,6 @@
 {
   "nav": {
+    "name": "Izabela Turaj",
     "home": "Home",
     "about": "About",
     "skills": "Skills",
@@ -8,66 +9,70 @@
   },
   "home": {
     "title": "Izabela Turaj",
-    "description": "Frontend developer, minimalistic design enthusiast and hopeless wanderer.",
-    "imgSrc": "",
-    "imgAlt": ""
+    "description": "Frontend developer, minimalistic design enthusiast and hopeless wanderer."
   },
   "about": {
     "title": "About",
-    "description": "My name is Izabela Turaj and I would like to become front end developer in the future. Currently looking for an opportunity to join a team of developers and gain more practical skills.",
-    "imgSrc": "",
-    "imgAlt": ""
+    "description": "My name is Izabela Turaj and I am passionate frontend developer with strong interest in user experience and interfaces. Currently looking for an opportunity to join a team of developers and gain more practical skills."
   },
-  "skills": [
-    "HTML5",
-    "CSS3",
-    "JavaScript",
-    "React",
-    "Gatsby",
-    "Node",
-    "Bootstrap",
-    "Material",
-    "UX/UI",
-    "SCSS",
-    "PUG",
-    "RWD"
-  ],
-  "projects": [
-    {
-      "type": "React Project",
-      "description": "Travel and leisure theme for ecommerce business created with React and Bootstrap 4.",
-      "url": "url",
-      "repo": "repo",
-      "skillOne": "tech",
-      "skillTwo": "skillTwo",
-      "img": "img",
-      "alt": "alt"
+  "skills": {
+    "title": "Skills",
+    "items": [
+      "HTML5",
+      "CSS3",
+      "JavaScript",
+      "React",
+      "Gatsby",
+      "Node",
+      "Bootstrap",
+      "Material",
+      "UX/UI",
+      "SCSS",
+      "PUG",
+      "RWD"
+    ]
+  },
+  "projects": {
+    "live": "Live",
+    "docs": "Docs",
+    "gatsbyProject": {
+      "type": "Gatsby Project",
+      "description": "Jamstack project accomodating personal portfolio, blog and shop of the illustration artist.",
+      "url": "https://sugarly.co/",
+      "repo": "https://github.com/sugarlydesign/sugarly",
+      "skillOne": "Gatsby",
+      "skillTwo": "React"
     },
-    {
-      "type": "React Project",
-      "description": "Travel and leisure theme for ecommerce business created with React and Bootstrap 4.",
-      "url": "url",
-      "repo": "repo",
-      "skillOne": "tech",
-      "skillTwo": "skillTwo",
-      "img": "img",
-      "alt": "alt"
+    "fullstackProject": {
+      "type": "Full Stack Project",
+      "description": "A platform created with MERN Stack to promote the global goals for sustainable development.",
+      "url": "https://community17.herokuapp.com",
+      "repo": "https://github.com/w-gluza/17community",
+      "skillOne": "React",
+      "skillTwo": "Node"
     },
-    {
+    "angularProject": {
+      "type": "Angular Project",
+      "description": "Collaborative project of multi-language communication platform for transportation using Angular 2 and Firebase.",
+      "url": "https://unibrew.firebaseapp.com/",
+      "repo": "https://github.com/ituraj/unibrew",
+      "skillOne": "Angular 2",
+      "skillTwo": "Firebase"
+    },
+    "reactProject": {
       "type": "React Project",
       "description": "Travel and leisure theme for ecommerce business created with React and Bootstrap 4.",
-      "url": "url",
-      "repo": "repo",
-      "skillOne": "tech",
-      "skillTwo": "skillTwo",
-      "img": "img",
-      "alt": "alt"
+      "url": "https://ituraj.github.io/travelthemenew/",
+      "repo": "https://github.com/ituraj/travelthemenew",
+      "skillOne": "React",
+      "skillTwo": "Bootstrap 4"
     }
-  ],
+  },
   "contact": {
     "title": "Contact",
     "description": "Looking for an opportunity to join a team of happy developers and gain more practical skills.",
-    "imgSrc": "",
-    "imgAlt": ""
+    "github": "Github",
+    "linkedin": "LinkedIn",
+    "resume": "Resume"
   }
 }

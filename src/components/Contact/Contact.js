@@ -1,24 +1,83 @@
 import React from "react";
-import aboutImage from "../../assets/images/about.png";
 import Icon from "../../assets/icons";
+import Skill from "../Skill/Skill";
 import colors from "../../styles/variables.scss";
+import resume from "../../assets/documents/resume.pdf";
+import data from "../../data/en.json";
+import Img from "gatsby-image";
 
-const Contact = () => {
+const Contact = ({ imgSrc }) => {
   return (
-    <section className="section" id="contact">
-      <figure>
-        <img src={aboutImage} alt="alt" />
+    <section className="section contact" id="contact">
+      <figure style={{ width: "100%" }} className="portfolio-figure">
+        <Img fluid={imgSrc} />
       </figure>
-      <article>
-        <h2>Contact</h2>
+      <article className="portfolio-article">
+        <h2>{data.contact.title}</h2>
         <Icon name="UnderscoreLg" fill={colors.secondary} />
-        <p>
-          Looking for an opportunity to join a team of happy developers and gain
-          more practical skills.
-        </p>
+        <p>{data.contact.description}</p>
+        <section className="links">
+          <a
+            href="https://github.com/ituraj"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="btn-link"
+          >
+            {data.contact.github}
+          </a>
+          <a
+            href="https://www.linkedin.com/in/izabela-turaj/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="btn-link"
+          >
+            {data.contact.linkedin}
+          </a>
+          <a
+            href={resume}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="btn-link"
+          >
+            {data.contact.resume}
+          </a>
+        </section>
+        <Skill skill="i.turaj@gmail.com" />
+        <Skill skill="+45 527 64 927" />
       </article>
     </section>
   );
 };
 
 export default Contact;
+
+// import React from "react";
+// import Img from "gatsby-image";
+// import { StaticQuery, graphql } from "gatsby";
+
+// const Contact = () => {
+//   return (
+//     <StaticQuery
+//       query={query}
+//       render={(data) => (
+//         <>
+//           <Img fluid={data.bgImg.childImageSharp.fluid} />
+//         </>
+//       )}
+//     />
+//   );
+// };
+
+// const query = graphql`
+//   query {
+//     bgImg: file(relativePath: { eq: "contact.png" }) {
+//       childImageSharp {
+//         fluid(maxWidth: 1240) {
+//           ...GatsbyImageSharpFluid
+//         }
+//       }
+//     }
+//   }
+// `;
+
+// export default Contact;

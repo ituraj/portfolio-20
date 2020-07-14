@@ -1,22 +1,19 @@
 import React from "react";
-import aboutImage from "../../assets/images/about.png";
 import Icon from "../../assets/icons";
 import colors from "../../styles/variables.scss";
+import data from "../../data/en.json";
+import Img from "gatsby-image";
 
-const About = () => {
+const About = ({ imgSrc }) => {
   return (
-    <section className="section" id="about">
-      <figure className="portfolio-figure">
-        <img src={aboutImage} alt="alt" />
+    <section className="section about" id="about">
+      <figure style={{ width: "100%" }} className="portfolio-figure">
+        <Img fluid={imgSrc} />
       </figure>
       <article className="portfolio-article">
-        <h2>About</h2>
+        <h2>{data.about.title}</h2>
         <Icon name="UnderscoreLg" fill={colors.secondary} />
-        <p>
-          My name is Izabela Turaj and I would like to become front end
-          developer in the future. Currently looking for an opportunity to join
-          a team of developers and gain more practical skills.
-        </p>
+        <p>{data.about.description}</p>
       </article>
     </section>
   );

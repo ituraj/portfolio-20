@@ -41,26 +41,74 @@ p {
 }
 
 img {
-  width: 100%;
+  max-width: 100%;
   height: auto;
 }
 
 .section {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  align-items: center;
-  justify-items: center;
+  min-height: calc(100vh - #{$nav-height});
+  margin-top: $nav-height;
+}
+
+.home {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: space-around;
+}
+
+.about,
+.contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
 
 .portfolio-figure,
 .portfolio-article {
-  margin: 1rem 4rem;
+  margin: 0;
 }
 
 .portfolio-figure {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  max-width: 40rem;
+  padding: 0;
+}
+
+.btn-link {
+  color: $color-primary;
+  font-size: $font-size-small;
+  margin-right: 1rem;
+  padding: 0.5rem 1rem;
+  border: solid $color-primary 1px;
+  text-decoration: none;
+}
+
+.btn-link:hover {
+  color: $color-white;
+  background: $color-primary;
+  text-decoration: none;
+}
+
+@media screen and (min-width: 768px) {
+  .home,
+  .about,
+  .contact {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    justify-items: center;
+  }
+
+  .portfolio-figure,
+  .portfolio-article {
+    margin: 1rem 4rem;
+  }
+
+  .portfolio-figure {
+    padding: 3rem;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .portfolio-figure {
+    padding: 6rem;
+  }
 }

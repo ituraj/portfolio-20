@@ -1,24 +1,22 @@
 import React from "react";
-import aboutImage from "../../assets/images/about.png";
 import Icon from "../../assets/icons";
 import colors from "../../styles/variables.scss";
+import data from "../../data/en.json";
+import Img from "gatsby-image";
 
-const About = () => {
+const Home = ({ imgSrc }) => {
   return (
-    <section className="section" id="home">
+    <section className="section home" id="home">
       <article className="portfolio-article">
-        <h1>Izabela Turaj</h1>
+        <h1>{data.home.title}</h1>
         <Icon name="UnderscoreLg" fill={colors.secondary} />
-        <p>
-          Frontend developer, minimalistic design enthusiast and hopeless
-          wanderer.
-        </p>
+        <p>{data.home.description}</p>
       </article>
-      <figure className="portfolio-figure">
-        <img src={aboutImage} alt="alt" />
+      <figure style={{ width: "100%" }} className="portfolio-figure">
+        <Img fluid={imgSrc} />
       </figure>
     </section>
   );
 };
 
-export default About;
+export default Home;

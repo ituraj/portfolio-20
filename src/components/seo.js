@@ -25,8 +25,7 @@ function SEO({ description, lang, meta, title }) {
       htmlAttributes={{
         lang,
       }}
-      title={title}
-      titleTemplate={site.siteMetadata.title}
+      title="Izabela Turaj | Portfolio"
       meta={[
         {
           name: `description`,

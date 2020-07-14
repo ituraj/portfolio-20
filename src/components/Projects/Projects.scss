@@ -1,6 +1,23 @@
 .portfolio-project {
+  min-height: calc(100vh - #{$nav-height});
+  margin-top: $nav-height;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (max-width: 768px) {
+  .reversed {
+    flex-direction: column-reverse;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .portfolio-project {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
     justify-items: center;
+  }
 }

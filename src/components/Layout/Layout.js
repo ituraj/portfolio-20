@@ -4,9 +4,11 @@ import "../../styles/main.scss";
 
 const Layout = ({ children }) => {
   return (
-    <div className="layout">
-      <Nav />
-      <main className="main">{children}</main>
+    <div className="page-wrapper">
+      <div className="layout">
+        <Nav />
+        <main className="main">{children}</main>
+      </div>
     </div>
   );
 };
