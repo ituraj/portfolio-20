@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import Icon from "../../assets/icons";
-import colors from "../../styles/variables.scss";
+import { colors } from "../../styles/colors";
 import data from "../../data/en.json";
 
 class Nav extends Component {

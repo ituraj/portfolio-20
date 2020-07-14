@@ -1,7 +1,7 @@
 import React from "react";
 import Icon from "../../assets/icons";
 import Skill from "../Skill/Skill";
-import colors from "../../styles/variables.scss";
+import { colors } from "../../styles/colors";
 import resume from "../../assets/documents/resume.pdf";
 import data from "../../data/en.json";
 import Img from "gatsby-image";

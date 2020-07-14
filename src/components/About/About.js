@@ -1,8 +1,8 @@
 import React from "react";
 import Icon from "../../assets/icons";
-import colors from "../../styles/variables.scss";
 import data from "../../data/en.json";
 import Img from "gatsby-image";
+import { colors } from "../../styles/colors";
 
 const About = ({ imgSrc }) => {
   return (

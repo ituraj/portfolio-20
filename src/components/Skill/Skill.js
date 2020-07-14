@@ -1,6 +1,6 @@
 import React from "react";
 import Icon from "../../assets/icons";
-import colors from "../../styles/variables.scss";
+import { colors } from "../../styles/colors";
 
 const Skill = (props) => {
   return (

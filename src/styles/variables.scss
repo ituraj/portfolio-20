@@ -19,13 +19,3 @@ $font-weight-bold: 500;
 $nav-height: 8vh;
 
 $figure-width: 35rem;
-
-:export {
-  primary: $color-primary;
-  secondary: $color-secondary;
-  tertiary: $color-tertiary;
-  light: $color-light;
-  white: $color-white;
-  black: $color-black;
-  figureWidth: $figure-width;
-}

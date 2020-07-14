@@ -1,7 +1,7 @@
 import React from "react";
 import Skill from "../Skill/Skill";
 import Icon from "../../assets/icons";
-import colors from "../../styles/variables.scss";
+import { colors } from "../../styles/colors";
 import data from "../../data/en.json";
 
 const Skills = () => {
