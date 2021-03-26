@@ -1,6 +1,5 @@
 import React from "react";
 import Icon from "../../assets/icons";
-import Skill from "../Skill/Skill";
 import { colors } from "../../styles/colors";
 import resume from "../../assets/documents/resume.pdf";
 import data from "../../data/en.json";
@@ -42,8 +41,6 @@ const Contact = ({ imgSrc }) => {
             {data.contact.resume}
           </a>
         </section>
-        <Skill skill="i.turaj@gmail.com" />
-        <Skill skill="+45 527 64 927" />
       </article>
     </section>
   );
